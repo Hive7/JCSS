@@ -17,6 +17,11 @@ square.select_rule("hover", {
     background: "blue"
 });
 
+JC(".red-square").rule({
+    opacity: 0.5
+});
+
+JC.apply_style();
 
 window.onload = function () {
     square_child.bind(
@@ -25,4 +30,6 @@ window.onload = function () {
             alert("Hi");
         }
     );
+
+    console.log(JC(".red-square").rules);
 }
